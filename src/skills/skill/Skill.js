@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Skill.module.css"
-// import styleContainer from "../common/styles/Container.module.css"
+
 
 
 const Skill = (props) => {

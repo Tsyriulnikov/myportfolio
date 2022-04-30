@@ -8,7 +8,6 @@ const Main = () => {
             <div className={styleContainer.container}>
                 <div className={`${style.text}`}>
 
-                    {/*<span className="subtitle">WELCOME TO MY WORLD</span>*/}
 
                     <span className={style.textAbout}>Text kkfkgjkfgkfjkfjg</span>
 
