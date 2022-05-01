@@ -34,12 +34,12 @@
 }
 .containerSquare {
     border: 1px solid;
-    height: 100px;
-    width: 80%  ;
+    height: 60px;
+    width: 90%  ;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
     flex-wrap: wrap;
 }
 
