@@ -9,7 +9,7 @@ const Main = () => {
                 <div className={`${style.text}`}>
 
 
-                    <span className={style.textAbout}>Text kkfkgjkfgkfjkfjg</span>
+                    <span className={style.textAbout}>Прривет!</span>
 
                 </div>
 
