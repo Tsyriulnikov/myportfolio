@@ -11,10 +11,10 @@ const Projects = (props) => {
             {/*<div className={styleContainer.container}>*/}
                 <h2 className={style.title}>Projects</h2>
                 <div className={style.projects}>
-                    {/*<Project title={"TodoList"} description={"мультипарадигменный язык программирования." +*/}
-                    {/*    " Поддерживает объектно-ориентированный, императивный и функциональный стили."}/>*/}
-                    {/*<Project title={"Counter"} description={"язык программирования, представленный Microsoft в " +*/}
-                    {/*    "2012 году и позиционируемый как средство разработки веб-приложений, расширяющее возможности JavaScript."}/>*/}
+                    <Project title={"TodoList"} description={"мультипарадигменный язык программирования." +
+                        " Поддерживает объектно-ориентированный, императивный и функциональный стили."}/>
+                    <Project title={"Counter"} description={"язык программирования, представленный Microsoft в " +
+                        "2012 году и позиционируемый как средство разработки веб-приложений, расширяющее возможности JavaScript."}/>
                 </div>
             </div>
         </div>
