@@ -1,25 +1,22 @@
-import React from "react";
-import style from './App.module.css';
-import Header from "./header/Header";
-import Main from "./main/Main";
-import Skills from "./skills/Skills";
-import Projects from "./projects/Projects";
-import Remote from "./remote/Remote";
-import Footer from "./footer/Footer";
-import Contacts from "./contacts/Contacts";
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Home from "./components/home/Home";
+import Navbar from "./components/navbar/Navbar";
+import Skills from "./components/skills/Skills";
+import Work from "./components/work/Work";
+
 
 function App() {
-    return (
-        <div className={style.app}>
-            <Header />
-            <Main />
-            <Skills />
-            <Projects />
-            <Remote />
-            <Contacts />
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <Home />
+      <About />
+      <Skills />
+      <Work />
+      <Contact />
+    </div>
+  );
 }
 
 export default App;
