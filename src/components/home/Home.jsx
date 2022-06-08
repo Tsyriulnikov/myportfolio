@@ -22,11 +22,13 @@ const Home = () => {
                         building responsive full-stack web applications.
                     </p>
                 </div>
+                <div className={stylesHome.containerFoto}>
+                    <img src={myFoto}/>
+                </div>
+
             </div>
 
-            <div className={stylesHome.containerFoto}>
-                <img src={myFoto}/>
-            </div>
+
         </div>
     );
 };
