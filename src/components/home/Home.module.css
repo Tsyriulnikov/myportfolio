@@ -165,6 +165,7 @@
     min-height: auto;
     min-width: auto;
     flex-shrink: 0;
+    /*opacity: 50%;*/
 }
 
 .textAbout {

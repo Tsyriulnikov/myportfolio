@@ -1,6 +1,7 @@
 import React from 'react';
 import stylesHome from './Home.module.css'
-import myFoto from '../../assets/myFoto.jpg'
+// import myFoto from '../../assets/myFoto.jpg'
+import myFoto from '../../assets/4136918.jpg'
 
 const Home = () => {
     return (
