@@ -31,6 +31,9 @@
     .aboutBlockGridMobile {
         text-align: right;
     }
+    .storyBlock {
+        text-align: right
+    }
 }
 
 .headerAbout {
@@ -41,4 +44,23 @@
     display: inline;
     border-bottom-width: 4px;
     border-color: #db2777;
+}
+.story{
+/*'max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'*/
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    gap: 2rem; /* 32px */
+    padding-left: 1rem; /* 16px */
+    padding-right: 1rem; /* 16px */
+}
+@media (min-width: 768px) {
+    .story {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+.storyBlock {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+    font-weight: 700;
 }
