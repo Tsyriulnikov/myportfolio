@@ -35,7 +35,6 @@
 }
 
 .skillsBlock {
-    /*'w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'*/
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -49,4 +48,21 @@
     .skillsBlock {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
+}
+
+.card {
+    box-shadow: 0px 4px 6px -1px black;
+    transition-duration: 500ms;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+.imgCard{
+    width: 5rem; /* 80px */
+    margin: auto;
+}
+.pCard{
+    margin-top: 1rem; /* 16px */
+    margin-bottom: 1rem; /* 16px */
 }

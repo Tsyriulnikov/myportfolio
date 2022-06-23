@@ -5,62 +5,43 @@ import CSS from '../../assets/css.png';
 import JavaScript from '../../assets/javascript.png';
 import ReactImg from '../../assets/react.png';
 import Node from '../../assets/node.png';
-import AWS from '../../assets/aws.png';
 import GitHub from '../../assets/github.png';
-import Mongo from '../../assets/ts.png';
+import Typescript from '../../assets/ts.png';
 import stylesSkills from './Skills.module.css'
+
 const Skills = () => {
-  return (
-    // <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
-    <div name='skills' className={stylesSkills.skillsMainBlock}>
-      {/* Container */}
-      {/*<div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>*/}
-      <div className={stylesSkills.container}>
-          <div>
-              {/*<p className='text-4xl font-bold inline border-b-4 border-pink-600 '>Умею</p>*/}
-              <p className={stylesSkills.headerSkills}>Умею</p>
-              <p className={stylesSkills.header2Skills}>Мой стэк технологий</p>
-          </div>
-
-          {/*<div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>*/}
-          <div className={stylesSkills.skillsBlock}>
-
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={HTML} alt="HTML icon" />
-                  <p className='my-4'>HTML</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={CSS} alt="HTML icon" />
-                  <p className='my-4'>CSS</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={JavaScript} alt="HTML icon" />
-                  <p className='my-4'>JAVASCRIPT</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={ReactImg} alt="HTML icon" />
-                  <p className='my-4'>REACT</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={GitHub} alt="HTML icon" />
-                  <p className='my-4'>GITHUB</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Node} alt="HTML icon" />
-                  <p className='my-4'>NODE JS</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={Mongo} alt="HTML icon" />
-                  <p className='my-4'>TYPESCRIPT</p>
-              </div>
-              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={AWS} alt="HTML icon" />
-                  <p className='my-4'>AWS</p>
-              </div>
-          </div>
-      </div>
-    </div>
-  );
+    const skills = [
+        {id: '1', tech: HTML, Title: 'HTML'},
+        {id: '2', tech: CSS, Title: 'CSS'},
+        {id: '3', tech: JavaScript, Title: 'JAVASCRIPT'},
+        {id: '4', tech: ReactImg, Title: 'REACT'},
+        {id: '5', tech: GitHub, Title: 'GITHUB'},
+        {id: '6', tech: Node, Title: 'NODE JS'},
+        {id: '7', tech: Typescript, Title: 'TYPESCRIPT'},
+        {id: '8', tech: ReactImg, Title: 'REACT NATIVE'},
+    ]
+    const skillsRend = skills.map((item) => {
+        return (
+            <div key={item.id} className={stylesSkills.card}>
+                <img className={stylesSkills.imgCard} src={item.tech} alt="HTML icon"/>
+                <p className={stylesSkills.pCard}>{item.Title}</p>
+            </div>
+        )
+    });
+    return (
+        <div name='skills' className={stylesSkills.skillsMainBlock}>
+            {/* Container */}
+            <div className={stylesSkills.container}>
+                <div>
+                    <p className={stylesSkills.headerSkills}>Умею</p>
+                    <p className={stylesSkills.header2Skills}>Мой стэк технологий</p>
+                </div>
+                <div className={stylesSkills.skillsBlock}>
+                    {skillsRend}
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default Skills;
