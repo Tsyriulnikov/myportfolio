@@ -1,0 +1,16 @@
+.mainBlock{
+/*'w-full h-screen bg-[#0a192f] flex justify-center items-center p-4'*/
+    width: 100%;
+    height: 100vh;
+    background-color: #0a192f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formContact{
+/*'flex flex-col max-w-[600px] w-full'*/
+display: flex;
+flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+}

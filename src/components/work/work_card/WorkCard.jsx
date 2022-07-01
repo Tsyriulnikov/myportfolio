@@ -15,16 +15,17 @@ export const WorkCard=()=>{
               <span className={stylesWorkCard.captionWork}>
                 React JS Application
               </span>
-                <div className='pt-8 text-center'>
+                {/*<div className='pt-8 text-center'>*/}
+                <div className={stylesWorkCard.buttonBlock}>
                     <a href='/'>
                         <button
-                            className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                            className={stylesWorkCard.buttonWork}>
                             Demo
                         </button>
                     </a>
                     <a href='/'>
                         <button
-                            className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                            className={stylesWorkCard.buttonWork}>
                             Code
                         </button>
                     </a>
