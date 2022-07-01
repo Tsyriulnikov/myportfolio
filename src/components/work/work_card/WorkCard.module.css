@@ -29,3 +29,11 @@
 .hoverDiv:hover{
     opacity: 100%;
 }
+.captionWork{
+    /*text-2xl font-bold text-white tracking-wider*/
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.05em;
+}
