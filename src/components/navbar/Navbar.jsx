@@ -14,40 +14,29 @@ import stylesNavbar from './Navbar.module.css'
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
+    const menuItems = [
+        {titleMenu: 'Home', linkMenu: 'home'},
+        {titleMenu: 'About', linkMenu: 'about'},
+        {titleMenu: 'Skills', linkMenu: 'skills'},
+        {titleMenu: 'Work', linkMenu: 'work'},
+        {titleMenu: 'Contact', linkMenu: 'contact'},
+    ]
+
 
     return (
         <div className={stylesNavbar.navbarMainBlock}>
             <div>
-                <img src={Logo} alt='Logo Image' style={{width: '50px'}}/>
+                <img src={Logo} alt='Logo' style={{width: '50px'}}/>
             </div>
 
             {/* menu */}
             <ul className={stylesNavbar.menu}>
-                <li>
-                    <Link to='home' smooth={true} duration={500}>
-                        Home
-                    </Link>
-                </li>
-                <li>
-                    <Link to='about' smooth={true} duration={500}>
-                        About
-                    </Link>
-                </li>
-                <li>
-                    <Link to='skills' smooth={true} duration={500}>
-                        Skills
-                    </Link>
-                </li>
-                <li>
-                    <Link to='work' smooth={true} duration={500}>
-                        Work
-                    </Link>
-                </li>
-                <li>
-                    <Link to='contact' smooth={true} duration={500}>
-                        Contact
-                    </Link>
-                </li>
+                {menuItems.map((el, index) =>
+                    <li key={index}>
+                        <Link to={el.linkMenu} smooth={true} duration={500}>
+                            {el.titleMenu}
+                        </Link>
+                    </li>)}
             </ul>
 
             {/* Hamburger */}
@@ -64,35 +53,13 @@ const Navbar = () => {
                 }
             >
                 <div className={stylesNavbar.hamburgerBlock}>
-                    <li className={stylesNavbar.hamburgerItems}>
-                        <Link onClick={handleClick} to='home' smooth={true} duration={500}>
-                            Home
-                        </Link>
-                    </li>
-                    <li className={stylesNavbar.hamburgerItems}>
-                        {' '}
-                        <Link onClick={handleClick} to='about' smooth={true} duration={500}>
-                            About
-                        </Link>
-                    </li>
-                    <li className={stylesNavbar.hamburgerItems}>
-                        {' '}
-                        <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
-                            Skills
-                        </Link>
-                    </li>
-                    <li className={stylesNavbar.hamburgerItems}>
-                        {' '}
-                        <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-                            Work
-                        </Link>
-                    </li>
-                    <li className={stylesNavbar.hamburgerItems}>
-                        {' '}
-                        <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
-                            Contact
-                        </Link>
-                    </li>
+
+                    {menuItems.map((el, index) =>
+                        <li key={index} className={stylesNavbar.hamburgerItems}>
+                            <Link onClick={handleClick} to={el.linkMenu} smooth={true} duration={500}>
+                                {el.titleMenu}
+                            </Link>
+                        </li>)}
                 </div>
             </ul>
 
@@ -109,23 +76,23 @@ const Navbar = () => {
                     </li>
                     <li className={`${stylesNavbar.socialIconsItem} ${stylesNavbar.gitHub}`}>
                         <a
-                            className='flex justify-between items-center w-full text-gray-300'
-                            href='https://github.com/Tsyriulnikov' target='_blank'
+                            className={stylesNavbar.linkSocialItem}
+                            href='https://github.com/Tsyriulnikov' target='_blank' rel="noreferrer"
                         >
                             Github <FaGithub size={30}/>
                         </a>
                     </li>
                     <li className={`${stylesNavbar.socialIconsItem} ${stylesNavbar.email}`}>
-                        <a
-                            className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                        <Link
+                            className={stylesNavbar.linkSocialItem}
+                            to='contact' smooth={true} duration={500}
                         >
                             Email <HiOutlineMail size={30}/>
-                        </a>
+                        </Link>
                     </li>
                     <li className={`${stylesNavbar.socialIconsItem} ${stylesNavbar.resume}`}>
                         <a
-                            className='flex justify-between items-center w-full text-gray-300'
+                            className={stylesNavbar.linkSocialItem}
                             href='/'
                         >
                             Resume <BsFillPersonLinesFill size={30}/>

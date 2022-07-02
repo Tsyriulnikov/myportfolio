@@ -22,7 +22,7 @@ const Home = () => {
                     </p>
                 </div>
 
-                <div className={stylesHome.fotoContainer}><img className={stylesHome.foto} src={myFoto}/></div>
+                <div className={stylesHome.fotoContainer}><img className={stylesHome.foto} alt={'My foto'} src={myFoto}/></div>
             </div>
         </div>
     )
