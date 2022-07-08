@@ -7,8 +7,9 @@
     align-items: center;
     padding-left: 1rem; /* 16px */
     padding-right: 1rem; /* 16px */
-    background-color: #2b2d33;
+    /*background-color: #2b2d33;*/
     color: #d1d5db;
+background-color: transparent;
 }
 .menu {
     display: none;

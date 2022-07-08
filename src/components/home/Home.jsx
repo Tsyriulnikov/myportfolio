@@ -9,20 +9,33 @@ const Home = () => {
             <div className={stylesHome.container}>
                 <div className={stylesHome.textContainer}>
 
-                    <p className={stylesHome.helloP}>Привет, моё имя</p>
-                    {/*<span className={stylesHome.textAbout}>Прривет!</span>*/}
-                    <h1 className={stylesHome.myNameH1}>
-                        Максим Цырюльников.
-                    </h1>
-                    <h2 className={stylesHome.frontEndH2}>
-                        Я front-end разработчик.
-                    </h2>
-                    <p className={stylesHome.aboutP}>
-                        Занимаюсь разработкой веб-проектов под ключ и их техническим сопровождением
-                    </p>
+
+                    <div className={stylesHome.helloBlock}>
+                        <h3 className={stylesHome.hello}>Hello, I'm</h3>
+                    </div>
+                    <div className={stylesHome.nameBlock}>
+                        <h3 className={stylesHome.name}>Maksim Tsyriulnikov</h3>
+                    </div>
+
+                    <div className={stylesHome.jobBlock}>
+                        <span className={stylesHome.job}>Frontend Developer</span>
+                    </div>
+
+                    {/*<p className={stylesHome.helloP}>Привет, моё имя</p>*/}
+                    {/*/!*<span className={stylesHome.textAbout}>Прривет!</span>*!/*/}
+                    {/*<h1 className={stylesHome.myNameH1}>*/}
+                    {/*    Максим Цырюльников.*/}
+                    {/*</h1>*/}
+                    {/*<h2 className={stylesHome.frontEndH2}>*/}
+                    {/*    Я front-end разработчик.*/}
+                    {/*</h2>*/}
+                    {/*<p className={stylesHome.aboutP}>*/}
+                    {/*    Занимаюсь разработкой веб-проектов под ключ и их техническим сопровождением*/}
+                    {/*</p>*/}
                 </div>
 
-                <div className={stylesHome.fotoContainer}><img className={stylesHome.foto} alt={'My foto'} src={myFoto}/></div>
+                <div className={stylesHome.fotoContainer}><img className={stylesHome.foto} alt={'My foto'}
+                                                               src={myFoto}/></div>
             </div>
         </div>
     )
