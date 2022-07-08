@@ -2,6 +2,7 @@
     width: 100%;
     height: 100vh;
     background-color: #0a192f;
+    background-image: url('../../assets/bricks.jpg');
     color: #d1d5db;
 }
 
@@ -59,9 +60,24 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-.storyBlock {
-    font-size: 2.25rem; /* 36px */
-    line-height: 2.5rem; /* 40px */
-    font-weight: 700;
-}
+.storyBlock1 {
+    /*font-size: 2.25rem; !* 36px *!*/
+    /*line-height: 2.5rem; !* 40px *!*/
+    /*font-weight: 700;*/
+    font-weight: 500;
+    line-height: 1.3;
+    /*font-family: 'Jost', sans-serif;*/
+    color: #f75023!important;
+    font-size: 35px;
+    font-family: 'TroubleSide', sans-serif;
 
+}
+.storyBlock2 {
+
+    font-weight: 300;
+    line-height: 1.5;
+    /*font-family: 'Jost', sans-serif;*/
+    font-size: 25px;
+    font-family: 'TroubleSide', sans-serif;
+
+}

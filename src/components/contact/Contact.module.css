@@ -2,6 +2,7 @@
     width: 100%;
     height: 100vh;
     background-color: #0a192f;
+    background-image: url('../../assets/bricks.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,16 +59,18 @@
 .submitButton {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-    border-width: 2px;;
+    /*border-width: 2px;;*/
     padding: 0.75rem 1rem;
     margin: 2rem auto;
     display: flex;
     align-items: center;
+    font-family: 'TroubleSide', sans-serif;
 }
 
 .submitButton:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(219 39 119 / var(--tw-bg-opacity));
+    /*background-color: rgb(219 39 119 / var(--tw-bg-opacity));*/
+    background-color: rgb(247 80 35 / var(--tw-bg-opacity));
     --tw-border-opacity: 1;
-    border-color: rgb(219 39 119 / var(--tw-border-opacity));
+    border-color: rgb(247 80 35 / var(--tw-border-opacity));
 }

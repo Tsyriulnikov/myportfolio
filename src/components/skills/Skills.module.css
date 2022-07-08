@@ -3,6 +3,7 @@
     width: 100%;
     height: 100vh;
     background-color: #0a192f;
+    background-image: url('../../assets/bricks.jpg');
     color: #d1d5db;
 }
 

@@ -8,19 +8,25 @@ const About = () => {
                 <div className={styleAbout.aboutBlockGrid}>
                     <div className={styleAbout.aboutBlockGridMobile}>
                         <p className={styleAbout.headerAbout}>
-                            Обо мне
+                            About me
                         </p>
                     </div>
                     <div></div>
                 </div>
                 <div className={styleAbout.story}>
-                    <div className={styleAbout.storyBlock}>
-                        <p> Я рад, что вы проявили интерес к моей персоне.</p>
+                    <div className={styleAbout.storyBlock1}>
+                        <p>Well met!</p>
                     </div>
-                    <div>
-                        <p>Стараюсь практиковаться и совершенствовать свои навыки, а также
-                            приобретать более глубокие знания в области фронтенд. Очень люблю
-                            свою профессию. Хочу чтобы работа способствовала моему профессиональному росту.</p>
+                    <div className={styleAbout.storyBlock2}>
+                        <p>I'm frontend developer with
+                            experience in creating SPA
+                            using React, Redux,
+                            TypeScript, JavaScript,
+                            SCSS, HTML. I'm planing to study AngularJS.
+                            I like mobile development and i upgrade skills React Native.
+                            I spend my leisure time on LeetCode
+                            or with educational books.
+                            Open for your suggestions.</p>
                     </div>
                 </div>
             </div>
