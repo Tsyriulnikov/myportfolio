@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/troubleside');
+/*@import url('http://fonts.cdnfonts.com/css/troubleside');*/
 
   .helloP {
     color: rgb(219 39 119);
@@ -185,3 +185,9 @@
     vertical-align: baseline;
 
 }
+/*@font-face {*/
+/*    font-family: "TroubleSide";*/
+/*    src:url("../../fonts/Troubleside-0WLp9.ttf") format("truetype");*/
+/*    font-style: normal;*/
+/*    font-weight: normal;*/
+/*}*/
