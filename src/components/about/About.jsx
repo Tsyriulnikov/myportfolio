@@ -11,7 +11,6 @@ const About = () => {
                             About me
                         </p>
                     </div>
-                    <div></div>
                 </div>
                 <div className={styleAbout.story}>
                     <div className={styleAbout.storyBlock1}>
@@ -23,9 +22,8 @@ const About = () => {
                             using React, Redux,
                             TypeScript, JavaScript,
                             SCSS, HTML. I'm planing to study AngularJS.
-                            I like mobile development and i upgrade skills React Native.
-                            I spend my leisure time on LeetCode
-                            or with educational books.
+                            I like mobile development and i improve skills React Native.
+                            I spend my leisure time in learning English and Spanish.
                             Open for your suggestions.</p>
                     </div>
                 </div>
