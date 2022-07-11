@@ -35,14 +35,6 @@
     .frontEndH2{font-size: 4.5rem;}
 }
 .container {
-    /*height: 100%;*/
-    /*width: 80%;*/
-    /*margin: 100px auto;*/
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: space-around;*/
-    /*flex-wrap: wrap;*/
-
     height: 100%;
     width: 80%  ;
     margin: 0 auto;
@@ -54,46 +46,27 @@
 }
 
 .mainBlock {
-    /*min-height: 100vh;*/
     background-image: url('../../assets/bricks.jpg');
     background-color: #2b2d33;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
+    font-family: 'TroubleSide', sans-serif;
 }
 
 .textContainer {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: flex-start;*/
     max-width: 100%;
     display: flex;
     width: 500px;
     height: 400px;
-    /*background-color: #2b2d33;*/
     background-color: transparent;
     max-height: 100%;
-    /*overflow-wrap: break-word;*/
     justify-content: space-evenly;
     flex-direction: column;
-
 }
 
 .fotoContainer {
-    /*max-width: 100%;*/
-    /*height: 400px;*/
-    /*width: 300px;*/
-    /*background-color: #0a192f;*/
-    /*overflow: hidden;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
     max-width: 100%;
     height: 400px;
     width: 500px;
@@ -105,7 +78,6 @@
     min-height: auto;
     min-width: auto;
     flex-shrink: 0;
-    /*opacity: 50%;*/
 }
 
 .textAbout {
@@ -123,17 +95,13 @@
     display: block;
     height: 32px;
     padding-top: 20px;
-    /*padding: 0px;*/
 }
 
 .hello{
     font-weight: 500;
     line-height: 1.3;
-    /*font-family: 'Jost', sans-serif;*/
     color: #f75023!important;
     font-size: 25px;
-    font-family: 'TroubleSide', sans-serif;
-
 }
 .nameBlock{
     background: transparent;
@@ -152,7 +120,6 @@
     letter-spacing: normal;
     line-height: 78px;
     vertical-align: baseline;
-    font-family: 'TroubleSide', sans-serif;
 
 }
 
@@ -176,8 +143,6 @@
 
 .job{
     color: #1cbe59!important;
-    /*font-family: "open sans", sans-serif;*/
-    font-family: 'TroubleSide', sans-serif;
     font-size: 25px;
     font-weight: 500;
     letter-spacing: normal;
@@ -185,9 +150,3 @@
     vertical-align: baseline;
 
 }
-/*@font-face {*/
-/*    font-family: "TroubleSide";*/
-/*    src:url("../../fonts/Troubleside-0WLp9.ttf") format("truetype");*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*}*/

@@ -1,14 +1,13 @@
 .skillsMainBlock {
-    /*'w-full h-screen bg-[#0a192f] text-gray-300'*/
     width: 100%;
     height: 100vh;
     background-color: #0a192f;
     background-image: url('../../assets/bricks.jpg');
     color: #d1d5db;
+    font-family: 'TroubleSide', sans-serif;
 }
 
 .container {
-    /*'max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'*/
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -21,7 +20,7 @@
 }
 
 .headerSkills {
-    /*'text-4xl font-bold inline border-b-4 border-pink-600 '*/
+    font-family: 'TroubleSide', sans-serif;
     font-size: 2.25rem; /* 36px */
     line-height: 2.5rem; /* 40px */
     font-weight: 700;
@@ -31,6 +30,7 @@
 }
 
 .header2Skills {
+    font-family: 'TroubleSide', sans-serif;
     padding-top: 1rem; /* 16px */
     padding-bottom: 1rem; /* 16px */
 }
@@ -59,11 +59,13 @@
 .card:hover {
     transform: scale(1.1);
 }
-.imgCard{
+
+.imgCard {
     width: 5rem; /* 80px */
     margin: auto;
 }
-.pCard{
+
+.pCard {
     margin-top: 1rem; /* 16px */
     margin-bottom: 1rem; /* 16px */
 }
