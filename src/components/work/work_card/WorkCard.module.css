@@ -17,12 +17,6 @@
 }
 
 .cardContainer:hover {
-    /*background-image: linear-gradient(*/
-    /*        to right,*/
-    /*        !*rgba(112, 157, 255, 0.8),*!*/
-    /*        rgba(247, 80, 35, 0.8),*/
-    /*        hsla(242, 74%, 61%, 0.8)*/
-    /*)!important;*/
     background: rgb(233,44,19);
     background: linear-gradient(323deg, rgba(233,44,19,0.5802696078431373) 52%, rgba(252,222,69,0.7679446778711485) 100%)!important;
 }
@@ -33,7 +27,6 @@
     opacity: 100%;
 }
 .captionWork{
-    /*text-2xl font-bold text-white tracking-wider*/
     font-size: 1.5rem; /* 24px */
     line-height: 2rem; /* 32px */
     font-weight: 700;
@@ -41,18 +34,12 @@
     letter-spacing: 0.05em;
 }
 .buttonBlock {
-/*'pt-8 text-center'*/
     text-align: center;
     padding-top: 2rem; /* 32px */
 }
 .buttonWork{
-/*'text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'*/
     text-align: center;
     border-radius: 0.5rem; /* 8px */
-    /*padding-left: 1rem; !* 16px *!*/
-    /*padding-right: 1rem; !* 16px *!*/
-    /*padding-top: 0.75rem; !* 12px *!*/
-    /*padding-bottom: 0.75rem; !* 12px *!*/
     padding: 0.75rem 1rem;
     margin: 0.5rem; /* 8px */
     background: white;
@@ -60,4 +47,5 @@
     font-weight: 700;
     font-size: 1.125rem; /* 18px */
     line-height: 1.75rem; /* 28px */
+    font-family: 'TroubleSide', sans-serif;
 }
