@@ -93,7 +93,7 @@ const Navbar = () => {
                     <li className={`${stylesNavbar.socialIconsItem} ${stylesNavbar.resume}`}>
                         <a
                             className={stylesNavbar.linkSocialItem}
-                            href='/'
+                            href='../../assets/CV_Maksim_Tsyriulnikov.pdf' download target="_blank"
                         >
                             Resume <BsFillPersonLinesFill size={30}/>
                         </a>
