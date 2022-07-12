@@ -10,6 +10,7 @@ import {BsFillPersonLinesFill} from 'react-icons/bs';
 import Logo from '../../assets/TSYRIULNIKOV_logo.png';
 import {Link} from 'react-scroll';
 import stylesNavbar from './Navbar.module.css'
+import myPDF from '../../assets/CV_Maksim_Tsyriulnikov.pdf';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -93,7 +94,7 @@ const Navbar = () => {
                     <li className={`${stylesNavbar.socialIconsItem} ${stylesNavbar.resume}`}>
                         <a
                             className={stylesNavbar.linkSocialItem}
-                            href='../../assets/CV_Maksim_Tsyriulnikov.pdf' download target="_blank"
+                            href={myPDF} download={"CV_Maksim_Tsyriulnikov.pdf"}
                         >
                             Resume <BsFillPersonLinesFill size={30}/>
                         </a>
