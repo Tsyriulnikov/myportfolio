@@ -1,48 +1,11 @@
-/*@import url('http://fonts.cdnfonts.com/css/troubleside');*/
-
-/*  .helloP {*/
-/*    color: rgb(219 39 119);*/
-/*}*/
-
-/*.myNameH1 {*/
-/*    !*font-size: 2.25rem; !* 36px *!*!*/
-/*    font-size: 2.25rem; !* 36px *!*/
-/*    line-height: 5.5rem; !* 40px *!*/
-/*    font-weight: 700;*/
-/*    color: #ccd6f6;*/
-/*}*/
-
-/*.frontEndH2 {*/
-/*    font-size: 1.25rem; !* 36px *!*/
-/*    line-height: 5.5rem; !* 40px *!*/
-/*    font-weight: 700;*/
-/*    color: #9da2ae;*/
-/*}*/
-
-/*.aboutP {*/
-/*    color: #8892b0;*/
-/*    padding-top: 1rem; !* 16px *!*/
-/*    padding-bottom: 1rem; !* 16px *!*/
-/*    max-width: 700px;*/
-/*    font-size: 2.25rem; !* 36px *!*/
-/*    line-height: 3.5rem; !* 40px *!*/
-/*}*/
-
-
-/*@media (min-width: 640px) {*/
-/*    .myNameH1{font-size: 4.5rem;}*/
-/*    .helloP{font-size: 2.5rem;}*/
-/*    .frontEndH2{font-size: 4.5rem;}*/
-/*}*/
-
 .container {
-    height: 100%;
+    min-height: 100%;
     width: 80%  ;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     /*flex-direction: column-reverse;*/
 }
 
@@ -54,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     font-family: 'TroubleSide', sans-serif;
+    flex-wrap: wrap;
 }
 
 .textContainer {
@@ -72,13 +36,14 @@
     height: 400px;
     width: 500px;
     background-color: #f0b2c6;
-
+    /*flex-wrap: wrap;*/
 }
 
 .foto {
     min-height: auto;
     min-width: auto;
     flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 .textAbout {

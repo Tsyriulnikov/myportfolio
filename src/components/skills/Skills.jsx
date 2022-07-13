@@ -33,8 +33,8 @@ const Skills = () => {
             {/* Container */}
             <div className={stylesSkills.container}>
                 <div>
-                    <p className={stylesSkills.headerSkills}>Умею</p>
-                    <p className={stylesSkills.header2Skills}>Мой стэк технологий</p>
+                    <p className={stylesSkills.headerSkills}>Skills</p>
+                    <p className={stylesSkills.header2Skills}>This is my technology stack</p>
                 </div>
                 <div className={stylesSkills.skillsBlock}>
                     {skillsRend}
