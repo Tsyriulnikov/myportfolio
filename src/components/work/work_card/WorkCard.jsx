@@ -13,7 +13,12 @@ export const WorkCard = () => {
                 React JS Application
               </span>
                 <div className={stylesWorkCard.buttonBlock}>
-
+                    <a href='/'>
+                        <button
+                            className={stylesWorkCard.buttonWork}>
+                            Demo
+                        </button>
+                    </a>
                     <a href='/'>
                         <button
                             className={stylesWorkCard.buttonWork}>
